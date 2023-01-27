@@ -1,0 +1,244 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Aboreto', cursive;
+
+    /* font-family: 'Exo 2', sans-serif; */
+
+
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* nav bar */
+nav {
+    background-color: white;
+    padding: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+nav ul .logo img {
+    width: 120px;
+    padding: 0;
+}
+
+/* welcome section */
+.welcome-section {
+
+    color: aliceblue;
+}
+
+.welcome-section>img {
+    /* height: 100vh; */
+    width: 100%;
+    position: relative;
+}
+
+.welcome-section h5 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.welcome-section h5 span {
+    font-size: 70px;
+    display: block;
+}
+
+.welcome-section h6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+
+}
+
+.welcome-section .reservation {
+    color: black;
+    background-color: white;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 70%;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: -40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.welcome-section .reservation label {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-section .reservation label input {
+    margin: 30px 0;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    font-family: 'Aboreto', cursive;
+
+}
+
+.vl {
+    height: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-image:
+        linear-gradient(to bottom,
+            rgb(156, 156, 156),
+            rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.hotel-section {
+
+    --s: 80px;
+    /* control the size */
+    --c1: #ffffff;
+    --c2: #faefe7f2;
+    --_g:
+        var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%, var(--c1) 36% 45%,
+        var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%, var(--c1) 76% 85%, var(--c2) 86% 95%,
+        #0000 96%;
+    background:
+        radial-gradient(50% 50% at 100% 0, var(--_g)),
+        radial-gradient(50% 50% at 0 100%, var(--_g)),
+        radial-gradient(50% 50%, var(--_g)),
+        radial-gradient(50% 50%, var(--_g)) calc(var(--s)/2) calc(var(--s)/2) var(--c1);
+    background-size: var(--s) var(--s);
+position: relative;
+
+}
+
+.hotel-section .container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.hotel-section h4 {
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
+}
+
+h5.phone {
+
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+text-align: start;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+
+h5.email {
+    writing-mode: vertical-lr;
+    position: absolute;
+text-align: start;
+
+    right: 5%;
+    top: 50%;
+
+
+}
+
+.hotel-section .container img {
+    height: 400px;
+    border: #ffffff solid 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.hotel-section .container div {
+    width: 50%;
+    padding: 30px;
+
+}
+
+.hotel-section .container div h1 {
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.hotel-section .container div p {
+    line-height: 30.5pt;
+}
+/* blog section */
+.blog-section .container{
+margin: 120px auto;
+width: 70%;
+}
+.blog-section .container h5,h1{
+    text-align: center;
+
+}
+.blog-section .container .card{
+
+    display: flex;
+    justify-content: space-between;
+}
+.blog-section .container .card > div{
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 10px -10px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+
+}
+.blog-section .container .card > div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.blog-section .container .card > div img{
+width: 100%;
+}
+.blog-section .container .card > div h5{
+    text-align: start;
+}
+.blog-section .container .card > div h1{
+    text-align: start;
+
+}
+.blog-section .container .card > div button{
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+}
