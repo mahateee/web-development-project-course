@@ -177,6 +177,12 @@ nav ul .logo img {
 
 }
 
+.hotel-section {
+    padding: 50px 0;
+
+
+}
+
 .hotel-section .container {
     width: 70%;
     display: flex;
@@ -189,7 +195,7 @@ nav ul .logo img {
     text-align: center;
     position: relative;
     margin-top: 10%;
-    padding: 20px;
+    padding: 40px;
 }
 
 h5.phone {
@@ -197,18 +203,18 @@ h5.phone {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     text-align: start;
-    position: absolute;
-    left: 5%;
-    top: 50%;
+    position: fixed;
+    right: 0%;
+    top: 30%;
 }
 
 h5.email {
     writing-mode: vertical-lr;
-    position: absolute;
+    position: fixed;
     text-align: start;
 
-    right: 5%;
-    top: 50%;
+    right: 0%;
+    top: 70%;
 
 
 }
@@ -221,12 +227,14 @@ h5.email {
 }
 
 .hotel-section .container div {
+    margin-top: 30px;
     width: 50%;
     padding: 30px;
 
 }
 
 .hotel-section .container div h1 {
+
     font-size: 40px;
     font-weight: 900;
 
@@ -435,6 +443,19 @@ h1 {
     color: #f1f1f1;
     text-shadow: 3px 5px 10px #000000;
 }
+
+footer {
+    background-color: #f8f9fa;
+
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    color: black;
+  }
+  footer a:hover{
+  color: gray;
+  }
 
 @media (min-width:768px) and (max-width: 992px) {
     .welcome-section h5 {
@@ -704,9 +725,11 @@ h1 {
         top: 30%;
 
     }
+
     .welcome-section>img {
         filter: brightness(80%);
     }
+
     .welcome-section .reservation {
         flex-direction: column;
         background-color: white;

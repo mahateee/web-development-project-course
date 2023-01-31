@@ -32,7 +32,6 @@ body {
 
 section {
     height: 100vh;
-    overflow: hidden;
 }
 
 /* nav bar */
@@ -141,7 +140,9 @@ section .container .gallery img:nth-child(5) {
 /*--- reservation---*/
 .book{
     
-    background: linear-gradient(rgba(30, 29, 29, 0.3),#f5f5f6),url("https://cdn.boatinternational.com/files/2022/03/9cbb4710-a6c5-11ec-a24b-473d1b1cb1d8-ritz-carlton-yacht-1.jpg");
+    background: linear-gradient(rgba(30, 29, 29, 0.3),#000007),url("https://cdn.boatinternational.com/files/2022/03/9cbb4710-a6c5-11ec-a24b-473d1b1cb1d8-ritz-carlton-yacht-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
    
 }
 .hero-bg{
@@ -156,6 +157,7 @@ section .container .gallery img:nth-child(5) {
   
 }
 .res{
+    padding: 20px;
   
     text-transform: uppercase;
     text-transform: uppercase;
@@ -192,10 +194,11 @@ margin: 20px 0 12px 0 ;
 }
 
 .form-item  input{
-    border-radius: 5px;
+    border-radius: 0px;
     height: 40px;
     width: 100%;
-    
+    outline: none;
+    border: 1px solid black;
     
 }
 .label{
