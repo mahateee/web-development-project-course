@@ -10,10 +10,28 @@ body {
     box-sizing: border-box;
 }
 
+input[type=submit] {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Aboreto', cursive;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
 section {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+
 }
+
 /* scroll */
 /* Track */
 ::-webkit-scrollbar-track {
@@ -29,6 +47,7 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -170,6 +189,7 @@ nav ul .logo img {
     text-align: center;
     position: relative;
     margin-top: 10%;
+    padding: 20px;
 }
 
 h5.phone {
@@ -229,7 +249,6 @@ h1 {
 }
 
 .blog-section .container .card {
-
     display: flex;
     justify-content: space-between;
 }
@@ -349,7 +368,8 @@ h1 {
 
 /* type section */
 .type-section {}
-.type-section h3{
+
+.type-section h3 {
     margin: 0 40px;
     padding: 0 30px;
     font-size: 40px;
@@ -395,6 +415,7 @@ h1 {
     align-items: center;
     overflow: hidden
 }
+
 .type-section .container>div:hover {
     transform: scale(90%);
 }
@@ -407,9 +428,400 @@ h1 {
     min-width: 100%;
     min-height: 100%;
 }
+
 .type-section .container>div h3 {
     position: absolute;
     font-size: 50px;
     color: #f1f1f1;
     text-shadow: 3px 5px 10px #000000;
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .welcome-section h5 {
+        font-size: 16px;
+    }
+
+    .welcome-section h5 span {
+        font-size: 40px;
+    }
+
+    .welcome-section h6 {
+        font-size: 16px;
+    }
+
+    .welcome-section .reservation {
+        flex-direction: column;
+        background-color: white;
+        height: auto;
+        position: absolute;
+        bottom: -60%;
+        padding: 10px;
+        justify-content: flex-end;
+    }
+
+    .welcome-section .reservation label input {
+        margin: 20px 0;
+        font-size: 20px;
+        border-bottom: #000000 0.5px solid;
+
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .hotel-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hotel-section .container img {
+        height: 200px;
+        position: absolute;
+        left: 60%;
+        top: 40%;
+        border: 0;
+    }
+
+    .hotel-section .container div p {
+        line-height: 20.5pt;
+
+    }
+
+    h5.phone {
+        left: 5%;
+        top: 30%;
+    }
+
+    h5.email {
+        left: 5%;
+        top: 60%;
+    }
+
+    .blog-section,
+    .recommend-section,
+    .type-section {
+        height: auto;
+    }
+
+    .blog-section .container {}
+
+    .blog-section .container .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-section .container .card>div {
+        margin: 20px;
+    }
+
+    .recommend-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommend-section .container {
+        grid-template-columns: 100%;
+        position: static;
+    }
+
+    .recommend-section .container .rt {
+        display: none;
+    }
+
+    .type-section .container {
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .type-section .container .meeting {
+        grid-area: 1/1/2/2;
+
+    }
+
+    .type-section .container .wedding {
+        grid-area: 2/1/3/2;
+
+    }
+
+    .type-section .container .yacht {
+        grid-area: 2/2/3/3;
+    }
+
+    .type-section .container .residences {
+        grid-area: 1/2/2/3;
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    .welcome-section h5 {
+        font-size: 16px;
+    }
+
+    .welcome-section h5 span {
+        font-size: 40px;
+    }
+
+    .welcome-section h6 {
+        font-size: 16px;
+    }
+
+    .welcome-section .reservation {
+        flex-direction: column;
+        background-color: white;
+        height: auto;
+        position: absolute;
+        bottom: -60%;
+        padding: 10px;
+        justify-content: flex-end;
+    }
+
+    .welcome-section .reservation label input {
+        margin: 20px 0;
+        font-size: 20px;
+        border-bottom: #000000 0.5px solid;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .hotel-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .hotel-section .container img {
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        border: 0;
+    }
+
+    .hotel-section .container div {
+        width: 45%;
+        padding: 40px 0;
+    }
+
+    .hotel-section .container div h1 {
+        font-size: 30px;
+        font-weight: 900;
+
+    }
+
+    .hotel-section .container div p {
+        line-height: 20.5pt;
+
+    }
+
+    h5.phone {
+        left: 5%;
+        top: 30%;
+    }
+
+    h5.email {
+        left: 5%;
+        top: 60%;
+    }
+
+    .blog-section,
+    .recommend-section,
+    .type-section {
+        height: auto;
+    }
+
+    .blog-section .container .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-section .container .card>div {
+        margin: 20px;
+    }
+
+    .recommend-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommend-section .container {
+        grid-template-columns: 100%;
+        position: static;
+    }
+
+    .recommend-section .container .rt {
+        display: none;
+    }
+
+    .type-section .container {
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .type-section .container .meeting {
+        grid-area: 1/1/2/2;
+
+    }
+
+    .type-section .container .wedding {
+        grid-area: 2/1/3/2;
+
+    }
+
+    .type-section .container .yacht {
+        grid-area: 2/2/3/3;
+    }
+
+    .type-section .container .residences {
+        grid-area: 1/2/2/3;
+    }
+
+    .type-section .container>div h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-section h5 {
+        font-size: 16px;
+        top: 20%;
+        left: 50%;
+    }
+
+    .welcome-section h5 span {
+        font-size: 30px;
+    }
+
+    .welcome-section h6 {
+        font-size: 14px;
+        text-align: center;
+        top: 30%;
+
+    }
+    .welcome-section>img {
+        filter: brightness(80%);
+    }
+    .welcome-section .reservation {
+        flex-direction: column;
+        background-color: white;
+        height: auto;
+        position: absolute;
+        bottom: -40%;
+        padding: 10px;
+        justify-content: flex-end;
+    }
+
+    .welcome-section .reservation label input {
+        margin: 20px 0;
+        font-size: 20px;
+        border-bottom: #000000 0.5px solid;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .hotel-section .container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .hotel-section .container img {
+        display: none;
+
+    }
+
+    .hotel-section .container div {
+        width: 65%;
+        padding: 40px 0;
+    }
+
+    .hotel-section .container div h1 {
+        font-size: 30px;
+        font-weight: 900;
+
+    }
+
+    .hotel-section .container div p {
+        line-height: 20.5pt;
+
+    }
+
+    h5.phone {
+        left: 5%;
+        top: 30%;
+    }
+
+    h5.email {
+        left: 5%;
+        top: 60%;
+    }
+
+    .blog-section,
+    .recommend-section,
+    .type-section {
+        height: auto;
+    }
+
+    .blog-section .container .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-section .container .card>div {
+        margin: 20px;
+    }
+
+    .recommend-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommend-section .container {
+        grid-template-columns: 100%;
+        position: static;
+    }
+
+    .recommend-section .container .rt {
+        display: none;
+    }
+
+    .type-section .container {
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20%;
+        padding: 0;
+
+
+    }
+
+    .type-section .container .meeting {
+        grid-area: 1/1/2/2;
+
+    }
+
+    .type-section .container .wedding {
+        grid-area: 2/1/3/2;
+
+    }
+
+    .type-section .container .yacht {
+        grid-area: 3/1/4/2;
+    }
+
+    .type-section .container .residences {
+        grid-area: 4/1/5/2;
+    }
+
+    .type-section .container>div h3 {
+        font-size: 30px;
+    }
 }
