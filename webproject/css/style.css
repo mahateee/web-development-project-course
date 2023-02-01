@@ -74,11 +74,24 @@ nav ul li {
     font-size: 16px;
     font-weight: 900;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: gray;
+
+}
 
 nav ul .logo img {
     width: 120px;
     padding: 0;
 }
+a.icon {
+    display: none;
+  }
 
 /* welcome section */
 .welcome-section {
@@ -201,18 +214,18 @@ nav ul .logo img {
 h5.phone {
 
     writing-mode: vertical-lr;
-    transform: rotate(180deg);
     text-align: start;
     position: fixed;
     right: 0%;
     top: 30%;
+    text-shadow: 0 0 25px white;
 }
 
 h5.email {
     writing-mode: vertical-lr;
     position: fixed;
     text-align: start;
-
+    text-shadow: 0 0 25px white;
     right: 0%;
     top: 70%;
 
@@ -371,11 +384,10 @@ h1 {
 
 }
 
-
-
-
 /* type section */
-.type-section {}
+.type-section {
+    margin-bottom: 50px;
+}
 
 .type-section h3 {
     margin: 0 40px;
@@ -446,16 +458,22 @@ h1 {
 
 footer {
     background-color: #f8f9fa;
-
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+    
+    
 }
-footer a{
+
+footer a,
+i {
     color: black;
-  }
-  footer a:hover{
-  color: gray;
-  }
+    text-decoration: none;
+}
+
+footer a,
+i:hover {
+    color: gray;
+}
 
 @media (min-width:768px) and (max-width: 992px) {
     .welcome-section h5 {
@@ -619,12 +637,11 @@ footer a{
         height: 200px;
         position: absolute;
         left: 50%;
-        top: 15%;
+        top: 50%;
         border: 0;
     }
 
     .hotel-section .container div {
-        width: 45%;
         padding: 40px 0;
     }
 
@@ -642,11 +659,13 @@ footer a{
     h5.phone {
         left: 5%;
         top: 30%;
+        margin: 5px;
     }
 
     h5.email {
         left: 5%;
         top: 60%;
+        margin: 5px;
     }
 
     .blog-section,
@@ -709,6 +728,12 @@ footer a{
 }
 
 @media (max-width: 576px) {
+    nav ul li a{
+        font-size: 14px;
+    }
+    nav ul .logo img {
+        width: 90px;
+    }
     .welcome-section h5 {
         font-size: 16px;
         top: 20%;
@@ -756,6 +781,9 @@ footer a{
 
     }
 
+.hotel-section h4 {
+    padding: 0;
+}
     .hotel-section .container img {
         display: none;
 
@@ -778,13 +806,16 @@ footer a{
     }
 
     h5.phone {
-        left: 5%;
+        right: 0%;
         top: 30%;
+        margin: 5px;
     }
 
     h5.email {
-        left: 5%;
-        top: 60%;
+        right: 0%;
+        top: 70%;
+        margin: 5px;
+
     }
 
     .blog-section,
@@ -807,6 +838,8 @@ footer a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 5px;
+        width: 90%;
     }
 
     .recommend-section .container {

@@ -61,7 +61,16 @@ nav ul .logo img {
     width: 120px;
     padding: 0;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
 
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: gray;
+
+}
 /*design sections*/
 section .container {
     padding: 25px;

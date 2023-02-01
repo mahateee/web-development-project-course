@@ -22,13 +22,14 @@
             <!-- <h1>LOGO</h1> -->
             <!-- TODO: img [LOGO ritz] -->
             <ul>
-                <li>Home</li>
-                <li>Our rooms</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category.html">Reservation</a></li>
                 <li class="logo">
                     <img src="../img/RitzCarlton.png" alt="">
                 </li>
-                <li>About us</li>
-                <li>Contact</li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -56,11 +57,20 @@
                     </div>
                 </div>
                 <div class="inputcard1">
-
+                   
                     <div class="inputradio">
-                        <p><label>Gender</label></p>
-                        <input type="radio" id="male" name="Gender" required><label>Male</label><br>
-                        <input type="radio" id="female" name="Gender" required><label>Female</label>
+                        <label>Gender</label>
+                        <br>
+                        <div>
+                            <input type="radio" id="male" class="radio" name="Gender" required>
+                            <label for="male">Male</label>
+                        </div>
+                        
+                        <br><div>
+                            <input type="radio" id="female" class="radio" name="Gender" required>
+                            <label for="male">Female</label>
+                        </div>
+                        
                     </div>
 
                     <div class="inputItem">
@@ -78,6 +88,10 @@
                     </div>
                 </div>
                 <div class="inputcard1">
+                    <div class="inputItem">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@hotmail.com">
+                    </div>
                     <div class="inputItem">
                         <label>Message</label>
                         <textarea id="message" row="8" cols="4" placeholder="Write your message"></textarea>
